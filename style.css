@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+html {
+    overscroll-behavior: none;
+}
+
+body {
+    background-image: url(media/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    font-family: "Fira Code SemiBold", monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+}
+
+.bttnLinks {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.bttnLinks:hover {
+    text-decoration: underline;
+    color: pink;
+}
+
+/* credit: https://plantpot.works/1255 */
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#nav-input {
+    display: none;
+}
+.hamburger {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: white;
+    transition: .5s;
+}
+.hamburger:hover span,
+.hamburger:hover span::before,
+.hamburger:hover span::after {
+    background: pink;
+}
+
+.hamburger span {
+    top: 45%;
+}
+.hamburger span::before {
+    top: -15px;
+}
+.hamburger span::after {
+    top: 15px;
+}
+#nav-input:checked ~ .hamburger span {
+    background: rgba(247,245,176,0);
+}
+#nav-input:checked ~ .hamburger span::before {
+    transform: translateY(15px) rotate(45deg);
+}
+#nav-input:checked ~ .hamburger span::after {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+#nav-input:checked ~ .hamburger:hover span::before {
+    background: palevioletred;
+}
+#nav-input:checked ~ .hamburger:hover span::after {
+    background: palevioletred;
+}
+
+/* existing styles unchanged */
+#container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* space for the hamburger */
+    transition: left 0.3s ease;
+    z-index: 1000; /* ensure it sits on top of other elements */
+}
+
+#sidebar .tabs {
+    margin-top: 20px;
+}
+
+#sidebar .tab {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+#sidebar .tab:hover {
+    background-color: #555;
+}
+
+/* toggle the sidebar when the checkbox is checked */
+#nav-input:checked ~ #sidebar {
+    left: 0;
+}
+
+
+.logos {
+    margin-top: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.disclaimer {
+    font-size: small;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 50px;
+        text-align: center;
+    }
+    .disclaimer {
+        display: none;
+    }
+}
+

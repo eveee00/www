@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evy's page</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div id="container">
+        <input id="nav-input" type="checkbox">
+        <label class="hamburger" for="nav-input"><span></span></label>
+        <div id="sidebar">
+            <div class="tabs">
+                <button class="tab">Tab 1</button>
+                <button class="tab">Tab 2</button>
+                <button class="tab">Tab 3</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="logos">
+        <input type="image" src="/media/ppage.svg" alt="pronounsPage" height="30" width="30" onclick="window.open('https://en.pronouns.page/@eveee00')" title="PronounsPage">
+        <input type="image" src="/media/github-mark-white.svg" alt="pronounsPage" height="30" width="30" onclick="window.open('https://github.com/eveee00')" title="Visit my Github">
+    </div>
+    <div id="home" class="main">
+        <h1>welcome to my page!</h1>
+        <p>heyo! I'm evy, but you can also call me max. I'm interested in everything to do with computers.</p>
+        <p>here you can find all my projects and social media.</p>
+        <p>i post rarely, and I don't really have many projects I'm actively working on.</p>
+        <p>but I'm always open to new ideas, just shoot me a dm on discord!</p>
+        <p>i'm still just a beginner programmer though, but i'm currently learning C#.</p>
+    </div>
+    <div id="links" class="main" style="display:none;">
+        <h1>socials:</h1>
+        <div id="links-buttons">
+            <a href="https://www.youtube.com/@max373-1.0" class="bttnLinks">youtube</a>
+            <a href="https://bsky.app/profile/eveee00.xyz" class="bttnLinks">bluesky</a>
+            <a href="https://github.com/eveee00/" class="bttnLinks">github</a>
+        </div>
+        <img class="center-image" src="https://lanyard.cnrad.dev/api/675299056070688789" alt="Discord Status" width="350px">
+    </div>
+    
+    <div id="projects" class="main" style="display:none;">
+        <h1>projects</h1>
+        <h3>these are the projects i'm working on. there is currently not much here though.</h3>
+        <a href="https://github.com/eveee00/eveee00.github.io" class="bttnLinks">this site</a>
+        <p class="bttnInfo">website that you're currently on.</p>
+        <a href="https://github.com/eveee00/vmware-discordrpc" class="bttnLinks">vmware-rpc</a>
+        <p class="bttnInfo">discord rich presence for vmware written in python.</p>
+        <a href="https://eveee00.xyz/media/mystery.mp4" class="bttnLinks">webPOST (DEAD)</a>
+        <p class="bttnInfo">-</p>
+        <a href="https://bsky.app/profile/insecurevnc.eveee00.xyz" class="bttnLinks">insecurevnc</a>
+        <p class="bttnInfo">bluesky bot that posts insecure VNC server screenshots every 30 minutes.</p>
+        <a href="https://github.com/eveee00/pyvncresolver" class="bttnLinks">pyvncresolver</a>
+        <p class="bttnInfo">a very simple python program that uses computernewb's vnc resolver api to pull a random vnc screenshot.</p>
+    </div>
+    <div id="specs" class="main" style="display:none;">
+        <h1>pc specs</h1>
+        <p>cpu: amd ryzen 7 5800x</p>
+        <p>gpu: nvidia rtx 3060</p>
+        <p>motherboard: msi mag b550 tomahawk</p>
+        <p>os: endeavouros</p>
+        <p>de: kde plasma 6.2</p>
+        <p>storage: samsung ssd 990 evo 2tb</p>
+        <p>ram: corsair vengeance lpx 4x 8gb</p>
+    </div>
+    <footer class="disclaimer" id="footer">
+        <div class="message-container">
+            If you see this, randomizer is broken. open a issue on the github repo. (or a pull request if you know how to fix it)
+        </div>
+    </footer>
+</body>
+</html>
