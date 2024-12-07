@@ -1,4 +1,3 @@
-# eveee00.github.io
-fancy website
+# fancy website
 
 this is pretty much a wip redesign of my website.
