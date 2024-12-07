@@ -13,11 +13,20 @@
     <script src="scripts.js"></script>
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="tab-bar">
+        <a href="#home" onclick="showSection('home', this)" class="active">home</a>
+        <a href="#links" onclick="showSection('links', this)">links</a>
+        <a href="#projects" onclick="showSection('projects', this)">projects</a>
+        <a href="#specs" onclick="showSection('specs', this)">specs</a>
+    </div>
+    <!--
     <div id="container">
         <input id="nav-input" type="checkbox">
         <label class="hamburger" for="nav-input"><span></span></label>
         </div>
     </div>
+    -->
     
     <div class="logos">
         <input type="image" src="/media/ppage.svg" alt="pronounsPage" height="30" width="30" onclick="window.open('https://en.pronouns.page/@eveee00')" title="PronounsPage">
@@ -25,11 +34,12 @@
     </div>
     <div id="home" class="main">
         <h1>welcome to my page!</h1>
-        <p>heyo! I'm evy, but you can also call me max. I'm interested in everything to do with computers.</p>
-        <p>here you can find all my projects and social media.</p>
-        <p>i post rarely, and I don't really have many projects I'm actively working on.</p>
-        <p>but I'm always open to new ideas, just shoot me a dm on discord!</p>
-        <p>i'm still just a beginner programmer though, but i'm currently learning C#.</p>
+        <p>
+            heyo! I'm evy, but you can also call me max. I'm interested in everything to do with computers.
+            <br>here you can find all my projects and social media.
+            <br>i post rarely, and I don't really have many projects I'm actively working on.
+            <br>i'm still just a beginner programmer, but i'm currently learning C#.
+        </p>
     </div>
     <div id="links" class="main" style="display:none;">
         <h1>socials:</h1>
@@ -38,17 +48,17 @@
             <a href="https://bsky.app/profile/eveee00.xyz" class="bttnLinks">bluesky</a>
             <a href="https://github.com/eveee00/" class="bttnLinks">github</a>
         </div>
-        <img class="center-image" src="https://lanyard.cnrad.dev/api/675299056070688789&idleMessage=:Probably%20touching%20grass rn..." alt="Discord Status" width="350px">
+        <img class="center-image" src="https://lanyard.cnrad.dev/api/675299056070688789?idleMessage=Probably%20touching%20grass%20rn..." alt="Discord Status" width="350px">
     </div>
     
     <div id="projects" class="main" style="display:none;">
         <h1>projects</h1>
         <h3>these are the projects i'm working on. there is currently not much here though.</h3>
-        <a href="https://github.com/eveee00/eveee00.github.io" class="bttnLinks">this site</a>
+        <a href="https://github.com/eveee00/www" class="bttnLinks">this site</a>
         <p class="bttnInfo">website that you're currently on.</p>
         <a href="https://github.com/eveee00/vmware-discordrpc" class="bttnLinks">vmware-rpc</a>
         <p class="bttnInfo">discord rich presence for vmware written in python.</p>
-        <a href="https://eveee00.xyz/media/mystery.mp4" class="bttnLinks">webPOST (DEAD)</a>
+        <a href="./media/trol.mp4" class="bttnLinks">webPOST (DEAD)</a>
         <p class="bttnInfo">-</p>
         <a href="https://bsky.app/profile/insecurevnc.eveee00.xyz" class="bttnLinks">insecurevnc</a>
         <p class="bttnInfo">bluesky bot that posts insecure VNC server screenshots every 30 minutes.</p>
@@ -57,13 +67,21 @@
     </div>
     <div id="specs" class="main" style="display:none;">
         <h1>pc specs</h1>
-        <p>cpu: amd ryzen 7 5800x</p>
-        <p>gpu: nvidia rtx 3060</p>
-        <p>motherboard: msi mag b550 tomahawk</p>
-        <p>os: endeavouros</p>
-        <p>de: kde plasma 6.2</p>
-        <p>storage: samsung ssd 990 evo 2tb</p>
-        <p>ram: corsair vengeance lpx 4x 8gb</p>
+        <p>
+            cpu: amd ryzen 7 5800x
+            <br>
+            gpu: nvidia rtx 3060
+            <br>
+            motherboard: msi mag b550 tomahawk
+            <br>
+            os: endeavouros
+            <br>
+            de: kde plasma 6.2
+            <br>
+            storage: samsung ssd 990 evo 2tb
+            <br>
+            ram: corsair vengeance lpx 4x 8gb
+        </p>
     </div>
     <footer class="disclaimer" id="footer">
         <div class="message-container">

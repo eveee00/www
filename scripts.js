@@ -144,8 +144,7 @@ console.warn("you nosy little shit, now close the console! >:3")
 console.warn("unless you actually know what you're doing (unlike me)")
 console.warn("by the way, you should NEVER paste stuff into here unless you exactly know what it does.")
 
-// this is old stuff (for the old tab system.) Maybe I'l lreuse this for the new hamburger menu.
-/*
+// this is old stuff (for the old tab system.) Maybe I'll reuse this for the new hamburger menu.
 
 function showSection(sectionId, element) {
     var sections = document.querySelectorAll('.main');
@@ -185,5 +184,3 @@ function showSection(sectionId, element) {
     // Add active class to the clicked tab
     element.classList.add('active');
 }
-*/
-

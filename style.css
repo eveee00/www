@@ -32,74 +32,15 @@ body {
     color: white;
     text-decoration: none;
     font-size: large;
+    text-decoration: wavy underline;
 }
 
 .bttnLinks:hover {
+
     text-decoration: underline;
     color: pink;
 }
 
-/* credit: https://plantpot.works/1255 */
-
-#container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-#nav-input {
-    display: none;
-}
-.hamburger {
-    position: relative;
-    width: 50px;
-    height: 30px;
-    cursor: pointer;
-}
-.hamburger span,
-.hamburger span::before,
-.hamburger span::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 8px;
-    border-radius: 5px;
-    background: white;
-    transition: .5s;
-}
-.hamburger:hover span,
-.hamburger:hover span::before,
-.hamburger:hover span::after {
-    background: pink;
-}
-
-.hamburger span {
-    top: 45%;
-}
-.hamburger span::before {
-    top: -15px;
-}
-.hamburger span::after {
-    top: 15px;
-}
-#nav-input:checked ~ .hamburger span {
-    background: rgba(247,245,176,0);
-}
-#nav-input:checked ~ .hamburger span::before {
-    transform: translateY(15px) rotate(45deg);
-}
-#nav-input:checked ~ .hamburger span::after {
-    transform: translateY(-15px) rotate(-45deg);
-}
-
-#nav-input:checked ~ .hamburger:hover span::before {
-    background: palevioletred;
-}
-#nav-input:checked ~ .hamburger:hover span::after {
-    background: palevioletred;
-}
 
 .logos {
     margin-top: 10px;
@@ -132,3 +73,91 @@ body {
     }
 }
 
+.tab-bar {
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    border: white 3px solid;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 5px rgba(109, 109, 109, 0.5);
+}
+
+.tab-bar a.active {
+    font-weight: bold;
+    color: pink;
+}
+
+.tab-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.tab-bar a:hover {
+    text-decoration: underline;
+}
+
+/* mobile view, attempt 3. 
+fuck it, i know this code is borked but who cares. nobody visits this shitty site anyways.*/
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        text-align: right;
+        padding: 10px;
+        z-index: 1200;
+        top: 5px;
+        left: 5px;
+    }
+
+    .tab-bar {
+        display: none;
+        position: fixed;
+        /* Fix it to the screen */
+        top: 0;
+        left: 0%;
+        /* chatgpt said 0% would work, it did not, jank fix: 50% left */
+        width: 100vw;
+        /* Fullscreen width */
+        height: 100vh;
+        /* Fullscreen height */
+        background-color: rgba(255, 255, 255, 0.2);
+        /* Dark background with transparency */
+        z-index: 1000;
+        /* Make sure it appears on top */
+        flex-direction: column;
+        /* Stack the tabs vertically */
+        justify-content: center;
+        /* Center the tabs vertically */
+        align-items: center;
+        /* Center the tabs horizontally */
+        margin: 0;
+        padding: 0;
+        font-size: x-large;
+    }
+
+    .tab-bar.active {
+        display: flex;
+    }
+
+    .tab-bar a {
+        margin-top: 10px;
+    }
+
+    .main {
+        margin-top: 10px;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+}
