@@ -1,0 +1,7 @@
+.vscode/*
+.idea/*
+.vs/*
+
+# this is there so i can mess around
+*.tmp
+*.temp
