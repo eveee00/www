@@ -84,19 +84,19 @@ body {
     box-shadow: 0 0 20px 5px rgba(109, 109, 109, 0.5);
 }
 
-.tab-bar a.active {
+a.active {
     font-weight: bold;
     color: pink;
 }
 
-.tab-bar a {
+a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
 
-.tab-bar a:hover {
+a:hover {
     text-decoration: underline;
 }
 

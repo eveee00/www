@@ -10,6 +10,7 @@ NOTE:
 I definetly need to move this to some api of some sorts. maybe just another github pages website that gives the quote in plaintext. this js file is getting too big.
 */
 
+/*
 var messages = [
     { text: "note: :3" },
     { text: ":)", url: "/media/mystery.mp4" },
@@ -44,6 +45,12 @@ var messages = [
     { text: "99 DAWWllers, but everywhere", url: "https://www.youtube.com/watch?v=FmW6RNT2jCs"},
     { text: "note: mobile view is only borken in safari, so i'm not bothering to fix it."},
     { text: "strawberries", url: "https://www.youtube.com/watch?v=1rwAvUvvQzQ"},
+];
+
+*/
+
+var messages = [
+    { text: "osu! free download mod apk 2028 no virus mcaffee clean 100%" }
 ];
 function messagesindex() { //useful debugging function: check how many messages there are
     console.log("the messages array has " + (messages.length - 1) + " items");
